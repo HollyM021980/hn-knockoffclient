@@ -79,15 +79,13 @@ hnClientApp.deleteUsers = function() {
 // var mainURL = 'https://thawing-wildwood-9103.herokuapp.com/';
 var Router = Backbone.Router.extend({
     routes: {
-        '': 'home',
-        'home': 'home',
-        'users': 'users',
-        'comments': 'comments'
+      '': 'home',
+      'home': 'home',
+      'users': 'users',
+      'comments': 'comments'
     },
 
     home: function() {
-        // $('#content').empty();
-
         hnClientApp.renderSubmissionList();
     },
 
